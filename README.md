@@ -10,4 +10,4 @@
 *space---------- o(n)*
 
 ## Solution
-
+![image](./assets/challenge-1.PNG)
