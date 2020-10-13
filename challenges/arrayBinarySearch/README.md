@@ -8,3 +8,4 @@
 *O(log n)*
 
 ## Solution
+![image](./assets/challenge-03.png)
