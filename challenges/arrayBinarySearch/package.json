@@ -1,8 +1,8 @@
 {
-  "name": "arrayShift",
+  "name": "arrayBinarySearch",
   "version": "1.0.0",
   "description": "",
-  "main": "array-shift.js",
+  "main": "array-binary-search.js",
   "scripts": {
     "test": "jest --coverage --verbose"
   },
