@@ -7,4 +7,4 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![image](../../assets/challenge2.PNG)
