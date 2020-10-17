@@ -1,7 +1,7 @@
 'use strict';
 
 const { expect } = require('@jest/globals');
-const LL = require('../linkedList/linked-list.js');
+const LL = require('../challenges/Data-Structures/linkedList/linked-list.js');
 
 describe('Linked List', () => {
   it('Constructor()', () => {
