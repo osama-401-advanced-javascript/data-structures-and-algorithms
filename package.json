@@ -1,0 +1,23 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "*function that take an array and reverse it*",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osama-401-advanced-javascript/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osama-401-advanced-javascript/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/osama-401-advanced-javascript/data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
