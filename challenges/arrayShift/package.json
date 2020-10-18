@@ -1,0 +1,16 @@
+{
+  "name": "arrayShift",
+  "version": "1.0.0",
+  "description": "*function takes array and return sorted array*",
+  "main": "arrayShift.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.5.3"
+  },
+  "scripts": {
+    "test":"jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
