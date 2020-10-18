@@ -10,7 +10,7 @@ let cb = (arr1, sI1, eI1, arr2, sI2) => {
 console.log(insertShiftArray(arr1, 5, cb));
 console.log(insertShiftArray(arr1, 99, cb));
 console.log(insertShiftArray(arr2, 16, cb));
-console.log(insertShiftArray(arr2, -100, cb));
+
 
 
 function insertShiftArray(arr, num, cb) {
