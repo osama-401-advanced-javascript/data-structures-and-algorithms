@@ -97,11 +97,14 @@ class LinkedList {
       currentNode = currentNode.next;
     }
     currentNode.next = node;
-    // console.log(this.head);
-    this.size++;
-
     return this;
   }
+
+
+
+
+
+
   kthFromEnd(k){
     let index=this.size-k-1;
 
@@ -127,11 +130,11 @@ class LinkedList {
 
 
 const ll = new LinkedList();
-ll.insert(4);
-ll.insert(5);
-ll.insert(6);
-ll.insert(7);
-ll.kthFromEnd(2)
+// ll.insert(4);
+// ll.insert(5);
+// ll.insert(6);
+// ll.insert(7);
+// ll.kthFromEnd(2)
 
 // ll.includes(4)
 // ll.toString();
