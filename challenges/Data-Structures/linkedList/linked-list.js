@@ -38,7 +38,7 @@ class LinkedList {
         newNode=newNode.next;  
 
       }
-      return (`"${str} NULL"`)
+      return (str + 'NULL');
   }
 
   insertBefore(value, newVal) {

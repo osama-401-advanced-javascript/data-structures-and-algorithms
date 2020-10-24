@@ -1,19 +1,20 @@
 'use strict'
 
 const LL = require('../Data-Structures/linkedList/linked-list.js');
-      const list1 = new LL();
-      const list2 = new LL();
-      list1.insert(2);
-      list1.insert(3);
-      list1.insert(1);
+    //   const list1 = new LL();
+    //   const list2 = new LL();
+    //   list1.insert(2);
+    //   list1.insert(3);
+    //   list1.insert(1);
   
-      list2.insert(4);
-      list2.insert(9);
-      list2.insert(5);
-     console.log(list1.head);
-     console.log(list2.head);
+    //   list2.insert(4);
+    //   list2.insert(9);
+    //   list2.insert(5);
+    //  console.log('im list1',list1.head);
+    //  console.log('im list2',list2.head);
      function zipLists(list1, list2) {
         let zippedLL = new LL();
+        // console.log('im zippedLL',zippedLL);
         let currentNode1 = list1.head;
         let currentNode2 = list2.head;
     
@@ -32,7 +33,7 @@ const LL = require('../Data-Structures/linkedList/linked-list.js');
         return zippedLL;
     }
     
-    let l3=zipLists(list1, list2)
-    console.log(l3.toString());
+    // let l3=zipLists(list1, list2)
+    // console.log(l3.toString());
 
     module.exports = zipLists;
