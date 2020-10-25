@@ -38,7 +38,7 @@ describe('stacks', ()=>{
   it('isEmpty should return true', ()=>{
 
     let result = stackClass.isEmpty()
-    expect(result).toBe(true)
+    expect(result).toBe(false)
   })
 
 });
@@ -69,6 +69,6 @@ describe('Queues', ()=>{
       it('isEmpty should return true', ()=>{
 
         let result = stackClass.isEmpty()
-        expect(result).toBe(true)
+        expect(result).toBe(false)
       })
   })
