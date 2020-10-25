@@ -47,9 +47,9 @@ class Stack {
   }
   isEmpty(){
     if(this.top){
-        return true
+        return false
       } else{
-        return false;
+        return true;
       }
   }
 //   console.log(true);
@@ -69,12 +69,23 @@ class Queue {
           this.front=node
           return this.front
         // console.log('im before',this.front);
-      }else{
-          this.front.next=node
-          return this.front
-        //   this.front=node
-        //   console.log('im after',this.front);
       }
+      let currentNode = this.front;
+      while (currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+      console.log(this.front);
+      return this.front;
+          
+          // node.next=this.front
+          // this.front=node;
+          // console.log('im after',this.front);
+          // console.log(node);
+
+          // return this.front
+        //   this.front=node
+      
     }
     dequeue(){
         if(this.front==null){
@@ -124,9 +135,13 @@ class Queue {
 // stack.peek();
 
 
-// const queue = new Queue()
-// queue.enqueue(5)
-// queue.enqueue(6)
+const queue = new Queue()
+queue.enqueue(5)
+queue.enqueue(6)
+queue.enqueue(7)
+queue.enqueue(8)
+
+
 // queue.dequeue()
 // queue.peek()
 // queue.isEmpty()
