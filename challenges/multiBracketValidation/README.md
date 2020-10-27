@@ -6,6 +6,6 @@ _Your function should take a string as its only argument, and should return a bo
 
 _Round Brackets : () Square Brackets : [] Curly Brackets : {}_
 
-## whiteBoard
+### whiteBoard
 
 ![image](../../../assets/ch13.png)
