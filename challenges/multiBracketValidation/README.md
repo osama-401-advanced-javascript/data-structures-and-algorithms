@@ -8,4 +8,4 @@ _Round Brackets : () Square Brackets : [] Curly Brackets : {}_
 
 ### whiteBoard
 
-![image](../../../assets/ch13.png)
+![image](../../../../assets/ch13.png)

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --verbose",
-    "lint": "eslint challenges/multiBracketValidation/multi-bracket-validation.js __test__/multi-bracket-validate.test.js"
-
+    "lint": "eslint challenges/Data-Structures/queueWithStacks/queue-with-stacks.js __test__/queue-with-stacks.test.js"
   },
   "repository": {
     "type": "git",
