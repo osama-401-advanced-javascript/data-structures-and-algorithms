@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Stack = require('../stacksAndQueues/stacks-and-queues.js').Stack;
 
@@ -20,7 +20,7 @@ class PseudoQueue{
     }
   }
 }
-const queue=new PseudoQueue
+// const queue=new PseudoQueue
 
 // queue.enqueue(5);
 //     queue.enqueue(10);

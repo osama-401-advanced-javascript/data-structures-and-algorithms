@@ -21,5 +21,5 @@ describe('queues with stacks testing', () => {
     queue.enqueue(15);
     queue.enqueue(20);
     expect(queue.dequeue()).toBe(5);
-  })
-})
+  });
+});
