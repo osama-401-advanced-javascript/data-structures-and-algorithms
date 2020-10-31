@@ -6,7 +6,6 @@
   "scripts": {
     "test": "jest --coverage --verbose",
     "lint": "eslint challenges/multiBracketValidation/multi-bracket-validation.js __test__/multi-bracket-validate.test.js"
-
   },
   "repository": {
     "type": "git",
