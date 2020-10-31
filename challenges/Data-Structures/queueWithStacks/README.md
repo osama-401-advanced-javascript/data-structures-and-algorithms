@@ -22,4 +22,4 @@ _enqueue(value) which inserts value into the PseudoQueue, using a first-in, firs
 
 ### WhiteBoard
 
-![image](../../../../assets/ch11.PNG)
+![image](../../../assets/ch11.PNG)
