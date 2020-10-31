@@ -30,14 +30,14 @@ class AnimalShelter {
   }
 }
 
-// const que=new AnimalShelter()
-// que.enqueue('dog')
-// que.enqueue('cat')
-// que.enqueue('dog')
-// console.log(que);
+const que=new AnimalShelter()
+que.enqueue('dog')
+que.enqueue('cat')
+que.enqueue('dog')
+console.log('hiiiiiiiiiiii',que);
 
-// que.dequeue('dog')
-// console.log(que);
+que.dequeue('dog')
+console.log('byeeeeeeeeeeeee',que);
 
 
 module.exports = AnimalShelter;

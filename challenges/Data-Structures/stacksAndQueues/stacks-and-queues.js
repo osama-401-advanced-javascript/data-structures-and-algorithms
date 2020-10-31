@@ -67,6 +67,7 @@ class Queue {
     //   this.storage.push(value)
       if(!this.front){
           this.front=node
+          this.storage.push(this.front.value)
           return this.front
         // console.log('im before',this.front);
       }
@@ -75,6 +76,7 @@ class Queue {
         currentNode = currentNode.next;
       }
       currentNode.next = node;
+      this.storage.push(node.value)
       console.log(this.front);
       return this.front;
           
@@ -93,6 +95,7 @@ class Queue {
         }
         let removedValue=this.front.value
         this.front=this.front.next
+        this.storage.pop()
         console.log(removedValue);
         console.log(this.front);
         return removedValue
