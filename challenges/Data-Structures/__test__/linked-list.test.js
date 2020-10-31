@@ -42,7 +42,7 @@ describe('Linked List', () => {
     list.insert(newValue);
     console.log(list.toString());
     
-    expect(list.toString()).toEqual(`"{ 7 } -> { 6 } ->  NULL"`);
+    expect(list.toString()).toEqual(`{ 7 } -> { 6 } -> NULL`);
   });
 
 });

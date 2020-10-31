@@ -9,19 +9,19 @@ class LinkedList {
   }
   insert(value){
     const node =new Node(value)
-        node.next=this.head;
-        this.head = node;
-        this.size++;
-        // console.log(this.size);
+    node.next=this.head;
+    this.head = node;
+    this.size++;
+    // console.log(this.size);
 
 
-        return this;
+    return this;
   }
   includes(value) {
     let newNode = this.head;
     while (newNode) {
       if (newNode.value === value) {
-          console.log(true);
+        console.log(true);
         return true;
 
       } else {
@@ -31,14 +31,14 @@ class LinkedList {
     return false;
   }
   toString(){
-      let str=''
-      let newNode=this.head;
-      while(newNode){
-        str+=`{ ${newNode.value} } -> `
-        newNode=newNode.next;  
+    let str=''
+    let newNode=this.head;
+    while(newNode){
+      str+=`{ ${newNode.value} } -> `
+      newNode=newNode.next;  
 
-      }
-      return (str + 'NULL');
+    }
+    return (str + 'NULL');
   }
 
   insertBefore(value, newVal) {
@@ -121,11 +121,11 @@ class LinkedList {
       console.log(currNode.value);
       return currNode.value;
     }
-    }
-
-
-
   }
+
+
+
+}
   
 
 
