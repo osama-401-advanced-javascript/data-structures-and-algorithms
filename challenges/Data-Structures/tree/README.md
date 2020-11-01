@@ -20,6 +20,8 @@ _Define a method named contains that accepts a value, and returns a boolean indi
 
 **contains()** _method will check if the value is esist or not in the tree_
 
+**findMaximumValue()** _method will return the max value of the tree_
+
 ### Approach & Efficiency
 
 _Time O(n) Space O(1) The approach was to create node create Binary tree class with inOrder, preOrder, postOrder methods to create a tree_
@@ -29,3 +31,4 @@ _Time O(n) space O(1)The approach was to create BST class with add and contains 
 ### WhiteBoard
 
 ![image](../../../assets/ch15.PNG)
+![image](../../../assets/ch116.PNG)
