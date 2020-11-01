@@ -1,7 +1,5 @@
 'use strict';
-const Node=require('./node.js');
-
-
+const Node = require('./node.js');
 
 class BinaryTree {
   constructor(root = null) {
@@ -10,15 +8,15 @@ class BinaryTree {
   // ROOT - LEFT - RIGHT
   preOrder() {
     // eslint-disable-next-line indent
-      const results = [];
+    const results = [];
     const _walk = (node) => {
       results.push(node.value);
       if (node.left) _walk(node.left);
       if (node.right) _walk(node.right);
     };
-  
+
     _walk(this.root);
-    console.log('preeeee',results);
+    console.log('preeeee', results);
     return results;
   }
   //  LEFT- ROOT - RIGHT
@@ -29,9 +27,9 @@ class BinaryTree {
       results.push(node.value);
       if (node.right) _walk(node.right);
     };
-  
+
     _walk(this.root);
-    console.log('innnnnnnnn',results);
+    console.log('innnnnnnnn', results);
     return results;
   }
   // LEFT - RIGHT - ROOT
@@ -42,41 +40,41 @@ class BinaryTree {
       if (node.right) _walk(node.right);
       results.push(node.value);
     };
-  
+
     _walk(this.root);
-    console.log('posttttttttt',results);
+    console.log('posttttttttt', results);
 
     return results;
   }
 }
-  
+
 class BST {
   constructor() {
     this.root = null;
   }
   add(data) {
     const node = this.root;
-    console.log('oneeeeeeeeeeee',node);
+    console.log('oneeeeeeeeeeee', node);
     if (node === null) {
       this.root = new Node(data);
-      console.log('twoooooo',this.root);
+      console.log('twoooooo', this.root);
       return this.root.value;
     } else {
-      console.log('threeeeeeeee',this.root);
-      const searchTree = function(node) {
+      console.log('threeeeeeeee', this.root);
+      const searchTree = function (node) {
         if (data < node.value) {
           if (node.left === null) {
             node.left = new Node(data);
-            console.log('rooot',node);
-            console.log('left value',node.left.value);
-            return node ;
+            console.log('rooot', node);
+            console.log('left value', node.left.value);
+            return node;
           } else if (node.left !== null) {
             return searchTree(node.left);
           }
         } else if (data > node.value) {
           if (node.right === null) {
             node.right = new Node(data);
-            console.log('rooot',node);
+            console.log('rooot', node);
 
             return node;
           } else if (node.right !== null) {
@@ -90,7 +88,7 @@ class BST {
       return searchTree(node);
     }
   }
-   
+
   contains(data) {
     let current = this.root;
     while (current) {
@@ -107,7 +105,15 @@ class BST {
     console.log(false);
     return false;
   }
-} 
+  findMaximumValue() {
+    let current = this.root;
+    while (current.right !== null) {
+      current = current.right;
+    }
+    console.log(current.value);
+    return current.value;
+  }
+}
 
 // const one = new Node(1);
 // const two = new Node(2);
@@ -124,22 +130,16 @@ class BST {
 // tree.inOrder();
 // tree.postOrder();
 
-  
-const bst = new BST();
+// const bst = new BST();
 
-bst.add(9);
-bst.add(4);
-bst.add(3);
+// bst.add(9);
+// bst.add(4);
 // bst.add(3);
+// bst.add(12);
 // bst.add(22);
-// bst.contains(22);
+// bst.findMaximumValue();
 // bst.contains(4);
 // bst.contains(9);
 // bst.contains(10);
 
-
-
-
-
-module.exports ={BinaryTree,BST} ;
-  
+module.exports = { BinaryTree, BST };

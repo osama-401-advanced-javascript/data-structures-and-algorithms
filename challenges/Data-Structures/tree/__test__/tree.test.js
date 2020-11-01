@@ -2,9 +2,7 @@ const BinaryTree = require('../tree.js').BinaryTree;
 const BST = require('../tree.js').BST;
 const bst = new BST();
 
-
 const Node = require('../node.js');
-
 
 describe('Binary Tree', () => {
   let tree = null;
@@ -43,25 +41,28 @@ describe('Binary search Tree', () => {
   it('should be a class', () => {
     expect(BST).toBeDefined();
   });
-    
+
   it('Can successfully instantiate a tree with a single root node', () => {
     const addNode = bst.add(5);
     expect(addNode).toEqual(5);
   });
-  it('Can successfully add a left child and right child to a single root node'
-    , () => {
-      
-      const addNodeLeft = bst.add(3);
-      const addNodeRight = bst.add(9);
+  it('Can successfully add a left child and right child to a single root node', () => {
+    const addNodeLeft = bst.add(3);
+    const addNodeRight = bst.add(9);
 
-      expect(addNodeLeft.left.value).toBe(3);
-      expect(addNodeRight.right.value).toBe(9);
-
-    });
+    expect(addNodeLeft.left.value).toBe(3);
+    expect(addNodeRight.right.value).toBe(9);
+  });
   it('contains()', () => {
     const contains = bst.contains(3);
     const notContains = bst.contains(12);
     expect(contains).toBe(true);
     expect(notContains).toBe(false);
+  });
+  it('find maximum value()', () => {
+    bst.add(10);
+    bst.add(20);
+
+    expect(bst.findMaximumValue()).toBe(20);
   });
 });
