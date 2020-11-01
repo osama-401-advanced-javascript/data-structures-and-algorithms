@@ -31,4 +31,4 @@ _Time O(n) space O(1)The approach was to create BST class with add and contains 
 ### WhiteBoard
 
 ![image](../../../assets/ch15.PNG)
-![image](../../../assets/ch116.PNG)
+![image](../../../assets/ch16.PNG)
