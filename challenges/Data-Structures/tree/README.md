@@ -1,6 +1,6 @@
 ## Binary Tree and BST Implementation
 
-### Challenge
+### Challenge-15
 
 _Create a Node class that has properties for the value stored in the node, the left child node, and the right child node._
 
@@ -32,3 +32,17 @@ _Time O(n) space O(1)The approach was to create BST class with add and contains 
 
 ![image](../../../assets/ch15.PNG)
 ![image](../../../assets/ch16.PNG)
+
+### Challenge-17
+
+_Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered._
+
+**breadth first traversal method** _which reads the tree by levels._
+
+### Approach & Efficiency
+
+_Time O(n) Space O(n) The approach was to create node create Binary tree class with breadth first traversal method_
+
+### WhiteBoard
+
+![image](../../../assets/ch17.PNG)
