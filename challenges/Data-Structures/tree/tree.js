@@ -46,27 +46,50 @@ class BinaryTree {
 
     return results;
   }
+  breadthFirstTraversal() {
+    let current = this.root;
+    let results = [];
+    let save = [];
+    let counter = -1;
+    results.push(current.value);
+    const _walk = (node) => {
+      if (node == undefined) {
+        return results;
+      }
+      counter++;
+      if (node.left) {
+        results.push(node.left.value);
+        save.push(node.left);
+      }
+      if (node.right) {
+        results.push(node.right.value);
+        save.push(node.right);
+      }
+      _walk(save[counter]);
+    };
+    _walk(this.root);
+    return results;
+  }
 }
-
 class BST {
   constructor() {
     this.root = null;
   }
   add(data) {
     const node = this.root;
-    console.log('oneeeeeeeeeeee', node);
+    // console.log('oneeeeeeeeeeee', node);
     if (node === null) {
       this.root = new Node(data);
-      console.log('twoooooo', this.root);
+      // console.log('twoooooo', this.root);
       return this.root.value;
     } else {
-      console.log('threeeeeeeee', this.root);
+      // console.log('threeeeeeeee', this.root);
       const searchTree = function (node) {
         if (data < node.value) {
           if (node.left === null) {
             node.left = new Node(data);
-            console.log('rooot', node);
-            console.log('left value', node.left.value);
+            // console.log('rooot', node);
+            // console.log('left value', node.left.value);s
             return node;
           } else if (node.left !== null) {
             return searchTree(node.left);
@@ -74,7 +97,7 @@ class BST {
         } else if (data > node.value) {
           if (node.right === null) {
             node.right = new Node(data);
-            console.log('rooot', node);
+            // console.log('rooot', node);
 
             return node;
           } else if (node.right !== null) {
@@ -93,7 +116,7 @@ class BST {
     let current = this.root;
     while (current) {
       if (data === current.value) {
-        console.log(true);
+        // console.log(true);
         return true;
       }
       if (data < current.value) {
@@ -102,7 +125,7 @@ class BST {
         current = current.right;
       }
     }
-    console.log(false);
+    // console.log(false);
     return false;
   }
   findMaximumValue() {
@@ -115,18 +138,27 @@ class BST {
   }
 }
 
-// const one = new Node(1);
-// const two = new Node(2);
-// const three = new Node(3);
-// const four = new Node(4);
-// const five = new Node(5);
+// const one = new Node(2);
+// const two = new Node(7);
+// const three = new Node(5);
+// const four = new Node(2);
+// const five = new Node(6);
+// const six = new Node(9);
+// const seven = new Node(5);
+// const eight = new Node(11);
+// const nine = new Node(4);
+
 // one.left = two;
 // one.right = three;
 // two.left = four;
 // two.right = five;
+// three.right = six;
+// five.left = seven;
+// five.right = eight;
+// six.left = nine;
 
 // const tree = new BinaryTree(one);
-// tree.preOrder();
+// console.log(tree.breadthFirstTraversal());
 // tree.inOrder();
 // tree.postOrder();
 
@@ -137,6 +169,7 @@ class BST {
 // bst.add(3);
 // bst.add(12);
 // bst.add(22);
+// bst.breadthFirstTraversal();
 // bst.findMaximumValue();
 // bst.contains(4);
 // bst.contains(9);
