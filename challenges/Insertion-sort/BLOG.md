@@ -1,6 +1,6 @@
 # Insertion Sort
 
-## Author: Osama Hanoun
+## Author: Osama Althabteh
 
 Insertion sort is a simple sorthing algortithm that is split into a sorted and unsorted part. Values in the unsorted part are grabbed and placed into the correct position in the sorted part.
 
@@ -24,7 +24,7 @@ How about we break that down into plain English.
 
 - First we will start with a completely unsorted array, we begin with index 0 being out temp variable which we will compare to the rest of the numbers in the array to see if they are sorted correctly.
 
-![unsorted](insertSort0.png)
+![unsorted](./assets/insertSort0.png)
 
 - Next we want to compare the first two elements against each other.
 
