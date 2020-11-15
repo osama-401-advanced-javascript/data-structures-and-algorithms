@@ -57,3 +57,10 @@ How about we break that down into plain English.
 - 42 is greater than 15 so the poor chap needs to keep moving. 23 is greater than 15 so on it goes. 16 is also greater than 15 so it marches along and then finally we come to 8, which is less than 15 and our last value can hang out in its new home!
 
 - Now we are left with a beautiful sorted list! Look at those values ascend!
+
+### Efficency
+
+Time: O(n^2)
+The basic operation of this algorithm is comparison. This will happen n \* (n-1) number of times…concluding the algorithm to be n squared.
+Space: O(1)
+No additional space is being created. This array is being sorted in place…keeping the space at constant O(1).
