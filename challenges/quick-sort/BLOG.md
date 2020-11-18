@@ -46,19 +46,14 @@ Let's go through how to do it step-by-step!
 
 - Let's start with an unsorted array, we are going to pick a "pivot" here. The pivot can be any number, or the middle one. We are going to pick the last element of this array to be our pivot.
 
-  ![one]();
-
 - Now let's go through and compare our pivot to each element starting on the left or start end of the array. We are moving any element smaller than our pivot value to the left, and any element larger than the pivot value to the right.
-  ![two]();
+
 - the pivot is now in the middle, and we will call this our partitionIndex, so we can keep track of where the center of our list is and how it should be split.
 
 - Let's do the sort again for the left side of the pivot. We will do that by picking a new pivot from the elements in this smaller array, and we will once again put all items smaller to the left and larger to the right. Keep passing through until this half is sorted.
-  ![three]();
 
 - Now we will do the same for the elements on the right side of our original pivot. Just keep sorting the smaller to the left and larger to the right until this is all sorted.
-  ![four]()
 
 - Both halves are sorted we will just put them together on either side of our partition Index, with the smaller items on the left and the larger on the right! There ya go! The array is now sorted and happy!
-  ![five]()
 
 - Quick sort isn't so scary once you break it down, and I hope you understand it just a tiny bit more after reading this.
