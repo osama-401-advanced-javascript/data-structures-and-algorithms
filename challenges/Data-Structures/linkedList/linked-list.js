@@ -5,15 +5,14 @@ const Node = require('./node.js');
 class LinkedList {
   constructor() {
     this.head = null;
-    this.size=0;
+    this.size = 0;
   }
-  insert(value){
-    const node =new Node(value)
-    node.next=this.head;
+  insert(value) {
+    const node = new Node(value);
+    node.next = this.head;
     this.head = node;
     this.size++;
     // console.log(this.size);
-
 
     return this;
   }
@@ -23,22 +22,20 @@ class LinkedList {
       if (newNode.value === value) {
         console.log(true);
         return true;
-
       } else {
         newNode = newNode.next;
       }
     }
     return false;
   }
-  toString(){
-    let str=''
-    let newNode=this.head;
-    while(newNode){
-      str+=`{ ${newNode.value} } -> `
-      newNode=newNode.next;  
-
+  toString() {
+    let str = '';
+    let newNode = this.head;
+    while (newNode) {
+      str += `{ ${newNode.value} } -> `;
+      newNode = newNode.next;
     }
-    return (str + 'NULL');
+    return str + 'NULL';
   }
 
   insertBefore(value, newVal) {
@@ -100,38 +97,27 @@ class LinkedList {
     return this;
   }
 
+  kthFromEnd(k) {
+    let index = this.size - k - 1;
 
-
-
-
-
-  kthFromEnd(k){
-    let index=this.size-k-1;
-
-    if(k>this.size||k<0||index<0){
-      let msg='Exception';
-      return msg
-      
-    }else{
+    if (k > this.size || k < 0 || index < 0) {
+      let msg = 'Exception';
+      return msg;
+    } else {
       let currNode = this.head;
-    
-      for (let i = 0; i < index ; i++) {
-        currNode = currNode.next ;
+
+      for (let i = 0; i < index; i++) {
+        currNode = currNode.next;
       }
       console.log(currNode.value);
       return currNode.value;
     }
   }
-
-
-
 }
-  
-
 
 const ll = new LinkedList();
-// ll.insert(4);
-// ll.insert(5);
+ll.insert(4);
+console.log(ll.insert(5));
 // ll.insert(6);
 // ll.insert(7);
 // ll.kthFromEnd(2)
