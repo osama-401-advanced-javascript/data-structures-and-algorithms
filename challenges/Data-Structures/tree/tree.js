@@ -7,44 +7,42 @@ class BinaryTree {
   }
   // ROOT - LEFT - RIGHT
   preOrder() {
-    // eslint-disable-next-line indent
-    const results = [];
-    const _walk = (node) => {
-      results.push(node.value);
-      if (node.left) _walk(node.left);
-      if (node.right) _walk(node.right);
+    let values = [];
+    let node = this.root;
+    if (!node) return 'The Tree is Empty';
+    let _walk = (node) => {
+      values.push(node.value);
+      if (node.leftChild) _walk(node.leftChild);
+      if (node.rightChild) _walk(node.rightChild);
     };
-
-    _walk(this.root);
-    console.log('preeeee', results);
-    return results;
+    _walk(node);
+    return values;
   }
-  //  LEFT- ROOT - RIGHT
+  // In-order: left >> root >> right
   inOrder() {
-    const results = [];
-    const _walk = (node) => {
-      if (node.left) _walk(node.left);
-      results.push(node.value);
-      if (node.right) _walk(node.right);
+    let values = [];
+    let node = this.root;
+    if (!node) return 'The Tree is Empty';
+    let _walk = (node) => {
+      if (node.leftChild) _walk(node.leftChild);
+      values.push(node.value);
+      if (node.rightChild) _walk(node.rightChild);
     };
-
-    _walk(this.root);
-    console.log('innnnnnnnn', results);
-    return results;
+    _walk(node);
+    return values;
   }
-  // LEFT - RIGHT - ROOT
+  // Post-order: left >> right >> root
   postOrder() {
-    const results = [];
-    const _walk = (node) => {
-      if (node.left) _walk(node.left);
-      if (node.right) _walk(node.right);
-      results.push(node.value);
+    let values = [];
+    let node = this.root;
+    if (!node) return 'The Tree is Empty';
+    let _walk = (node) => {
+      if (node.leftChild) _walk(node.leftChild);
+      if (node.rightChild) _walk(node.rightChild);
+      values.push(node.value);
     };
-
-    _walk(this.root);
-    console.log('posttttttttt', results);
-
-    return results;
+    _walk(node);
+    return values;
   }
   breadthFirstTraversal() {
     let current = this.root;
