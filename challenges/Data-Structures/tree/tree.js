@@ -16,6 +16,7 @@ class BinaryTree {
       if (node.rightChild) _walk(node.rightChild);
     };
     _walk(node);
+    console.log(values);
     return values;
   }
   // In-order: left >> root >> right
@@ -29,6 +30,7 @@ class BinaryTree {
       if (node.rightChild) _walk(node.rightChild);
     };
     _walk(node);
+    console.log(values);
     return values;
   }
   // Post-order: left >> right >> root
@@ -136,28 +138,29 @@ class BST {
   }
 }
 
-// const one = new Node(2);
-// const two = new Node(7);
-// const three = new Node(5);
-// const four = new Node(2);
-// const five = new Node(6);
-// const six = new Node(9);
-// const seven = new Node(5);
-// const eight = new Node(11);
-// const nine = new Node(4);
+const one = new Node(2);
+const two = new Node(7);
+const three = new Node(5);
+const four = new Node(2);
+const five = new Node(6);
+const six = new Node(9);
+const seven = new Node(5);
+const eight = new Node(11);
+const nine = new Node(4);
 
-// one.left = two;
-// one.right = three;
-// two.left = four;
-// two.right = five;
-// three.right = six;
-// five.left = seven;
-// five.right = eight;
-// six.left = nine;
+one.left = two;
+one.right = three;
+two.left = four;
+two.right = five;
+three.right = six;
+five.left = seven;
+five.right = eight;
+six.left = nine;
 
-// const tree = new BinaryTree(one);
+const tree = new BinaryTree(one);
+console.log(tree);
 // console.log(tree.breadthFirstTraversal());
-// tree.inOrder();
+console.log(tree.preOrder());
 // tree.postOrder();
 
 // const bst = new BST();
@@ -173,4 +176,4 @@ class BST {
 // bst.contains(9);
 // bst.contains(10);
 
-module.exports = { BinaryTree, BST };
+// module.exports = { BinaryTree, BST };
